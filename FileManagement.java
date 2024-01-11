@@ -3,9 +3,11 @@ import java.nio.file.*;
 
 public class FileManagement
 {
+    private String path;
+    private String finalpath;
     public byte[] encode(String name) {
         byte[] enc = null;
-        String path = System.getProperty("user.dir") + "\\"+name;
+        path = System.getProperty("user.dir") + "\\"+name;
         try {
             enc = Files.readAllBytes(Paths.get(path));
         } catch (IOException e) {
@@ -16,7 +18,7 @@ public class FileManagement
     
     public void decode(byte[] enc, String name, String dest)
     {
-        String finalpath = System.getProperty("my.custom.path", dest) + "\\"+name;
+        finalpath = System.getProperty("my.custom.path", dest) + "\\"+name;
         try 
         {
             // byte[] encoded = Files.readAllBytes(Paths.get(path));
