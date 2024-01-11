@@ -12,4 +12,4 @@ Share-It simplifies the process of sharing files across different systems. Wheth
   
 - **Command-Line Interface:** The application comes with an intuitive and Command-line interface for a smooth.
 
-- ** Future-Socpe:** Future scope of this projects includes the security of the file for sharing and UI for the same
+- **Future-Socpe:** Future scope of this projects includes the security of the file for sharing and UI for the same
